@@ -1,22 +1,39 @@
-<header class="p-5 bg-dark text-white">
-    <nav class="container d-flex justify-content-between align-items-center">
-        <img src="img/modern-family-logo.png" alt="Logo Modern Family" class="nav-img" loading="lazy" style="height: 80px;">
-        <ul class="nav mt-5">
-            <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#familia">Família</a></li>
-            <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Family</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo-modernfamily.jpeg" alt="Modern Family Logo" class="logo" />
   </header>
-  
-  <main class="container my-5">
-    <section id="inicio" class="my-5">
-      <div class="inicio-fundo d-flex justify-content-between align-items-center" style="background-image: url('img/family-background.jpg'); background-size: cover; background-position: center; padding: 80px 20px;">
-        <div class="esquerda-conteudo text-white">
-          <h1 class="display-4 fst-italic fw-bold">Bem-vindo ao meu caos familiar!</h1>
-          <p class="lead">Inspirado em Modern Family — com um toque bem pessoal 🫶</p>
-          <a href="#familia" class="btn btn-light btn-lg fw-semibold mt-3">Conheça minha versão da família!</a>
-        </div>
-      </div>
+
+  <nav>
+    <button onclick="history.back()">Voltar</button>
+  </nav>
+
+  <section class="introducao">
+    <h1>Bem-vindo ao universo de Modern Family!</h1>
+    <p>
+      "Modern Family" é uma série que mostra, com muito humor e carinho, os desafios e alegrias de três famílias interligadas — todas diferentes, mas com algo em comum: o amor. 
+    </p>
+  </section>
+
+  <main>
+    <section class="galeria">
+      <img src="modernfamily-frame.jpeg" alt="Foto em família" />
+      <img src="família-cameron.jpeg" alt="Cameron e Mitchell com filhos" />
+      <img src="família-phil1.jpeg" alt="Phil e família 1" />
+      <img src="família-phil2.jpeg" alt="Phil e família 2" />
+      <img src="família-gloria.jpeg" alt="Jay, Gloria e filhos" />
     </section>
-  
+  </main>
+
+  <footer>
+    <p>Site criado por [Seu Nome] - Tema: Modern Family</p>
+  </footer>
+</body>
+</html>

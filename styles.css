@@ -1,93 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-
-:root {
-    --vermelho-modern: #D62828;
-    --cinza-modern: #f1f1f1;
-    --preto: #000000;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
-    background-color: #ffffff;
-}
-
-header {
-    background-color: var(--preto);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #fdfdfd;
+    color: #333;
+  }
+  
+  header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 250px;
+  }
+  
+  nav {
+    text-align: left;
+    padding: 10px 20px;
+  }
+  
+  nav button {
+    background-color: #ff5722;
     color: white;
-}
-
-.nav-link {
-    color: white;
-    font-weight: 600;
-}
-
-.inicio-fundo {
-    background-image: url('img/modern-family-bg.jpg'); /* imagem inspirada na série */
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
-    width: 100%;
-    height: 600px;
-    padding: 40px;
-    margin: 0 auto;
-    color: white;
-}
-
-.display-4 {
-    font-family: 'Permanent Marker', cursive;
-    text-shadow: 3px 3px var(--vermelho-modern);
-}
-
-.botao-inicio {
-    background-color: var(--vermelho-modern);
-    border-radius: 30px;
     border: none;
-    color: white;
-    font-weight: bold;
-    width: 14em;
-    height: 3em;
-}
-
-#tropicalia {
-    padding-top: 5rem;
-    background: none;
-}
-
-h2 {
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2.5em;
-    color: var(--vermelho-modern);
-}
-
-#galeria {
-    background-color: var(--cinza-modern);
-}
-
-.fundo-galeria {
-    background: none;
-}
-
-#contato {
-    background-color: #eeeeee;
-    padding: 4rem 0;
-}
-
-.formulario {
-    background-color: white;
-    padding: 2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  nav button:hover {
+    background-color: #e64a19;
+  }
+  
+  .introducao {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 10px 20px;
+  }
+  
+  .introducao h1 {
+    color: #ff5722;
+    margin-bottom: 10px;
+  }
+  
+  .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .galeria img {
+    width: 300px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.formulario button {
-    background-color: var(--vermelho-modern);
-    border: none;
-    color: white;
-    font-weight: bold;
-}
-
-.form-control {
-    background-color: #f9f9f9;
-}
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .galeria img:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 40px;
+  }
+  
